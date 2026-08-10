@@ -53,6 +53,8 @@ button {
 #custom-power,
 #custom-weather,
 #custom-uptime,
+#custom-hyprsunset,
+#custom-vpn,
 #custom-docker {
   background-color: #101010;
   padding: 0.5rem 1rem;
@@ -113,6 +115,43 @@ button {
   margin-right: 1rem;
   border-radius: 0px 5px 5px 0px;
   color: #e78284;
+}
+
+#custom-hyprsunset {
+  border-radius: 5px;
+}
+
+#custom-hyprsunset.on {
+  color: #ef9f76;
+}
+
+#custom-hyprsunset.off {
+  color: #737994;
+}
+
+#custom-hyprsunset.error {
+  color: #e78284;
+}
+
+#custom-vpn {
+  border-radius: 5px;
+}
+
+/* VPN ligada: pilula verde solida, impossivel de nao ver */
+#custom-vpn.on {
+  background-color: #a6d189;
+  color: #101010;
+  font-weight: bold;
+  border-radius: 5px;
+  margin: 5px 2px;
+  padding: 0.5rem 0.8rem;
+}
+
+/* sem VPN o modulo nao renderiza nada (texto vazio) */
+#custom-vpn.off {
+  padding: 0;
+  margin: 0;
+  background-color: transparent;
 }
 
 #custom-docker.docker {

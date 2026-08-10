@@ -4,7 +4,7 @@
     "height": 20,
     "spacing": 4,
     "modules-left": [
-	"hyprland/workspaces",
+	"ext/workspaces",
         "sway/workspaces",
         "sway/mode",
         "sway/scratchpad",
@@ -31,8 +31,9 @@
 	"bluetooth",
         "custom/power"
     ],
-     "hyprland/workspaces": {
+     "ext/workspaces": {
          "format": "{icon}",
+         "on-click": "activate",
          "format-icons": {
              "1": "",
              "2": "",

@@ -22,6 +22,7 @@
         "power-profiles-daemon",
         "cpu",
         "memory",
+        "custom/docker",
         "keyboard-state",
         "sway/language",
         "battery",
@@ -177,7 +178,7 @@
     "format": "{}",
     "return-type": "json",
     "interval": 10,
-    "exec": "$(pwd)/scripts/docker-stats/docker-stats",
+    "exec": "$HOME/.config/waybar/docker-stats/docker-stats",
     "tooltip": true
   },
     "custom/vpn": {

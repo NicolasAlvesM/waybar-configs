@@ -47,7 +47,6 @@ status() {
         printf 'Jobs noturnos OFX-Facil\n'
         printf 'Agendamento: %s\n' "$([ $on = 1 ] && echo LIGADO || echo desligado)"
         printf 'Motor: %s / %s' "$engine" "$model"
-        [ "$engine" != claude ] && printf '  (e-mails rodam no claude: busca, labels e drafts do /process-emails usam o Gmail MCP)'
         printf '\n'
         for j in $JOBS; do
             printf '\n%s\n' "$(label $j)"

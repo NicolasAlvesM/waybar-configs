@@ -56,6 +56,7 @@ button {
 #custom-uptime,
 #custom-hyprsunset,
 #custom-vpn,
+#custom-ofx-noturno,
 #custom-docker {
   background-color: #101010;
   padding: 0.5rem 1rem;
@@ -194,3 +195,9 @@ button {
 #custom-weather.error {
   color: #e78284; /* Red */
 }
+
+/* jobs noturnos OFX (ofx-noturno.sh) */
+#custom-ofx-noturno.off { color: #6c6f85; }
+#custom-ofx-noturno.on { color: #a6d189; }
+#custom-ofx-noturno.running { color: #e5c890; }
+#custom-ofx-noturno.error { color: #e78284; }

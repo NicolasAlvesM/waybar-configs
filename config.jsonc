@@ -27,6 +27,7 @@
         "sway/language",
         "battery",
         "battery#bat2",
+        "custom/ofx-noturno",
         "custom/hyprsunset",
         "tray",
 	"bluetooth",
@@ -199,6 +200,18 @@
         "on-click": "$HOME/.config/waybar/hyprsunset.sh toggle",
         "on-scroll-up": "$HOME/.config/waybar/hyprsunset.sh cooler",
         "on-scroll-down": "$HOME/.config/waybar/hyprsunset.sh warmer",
+        "tooltip": true
+    },
+    "custom/ofx-noturno": {
+        "format": "{}",
+        "return-type": "json",
+        "interval": 30,
+        "signal": 9,
+        "exec": "$HOME/.config/waybar/ofx-noturno.sh",
+        "on-click": "$HOME/.config/waybar/ofx-noturno.sh toggle",
+        "on-click-right": "$HOME/.config/waybar/ofx-noturno.sh model",
+        "on-click-middle": "$HOME/.config/waybar/ofx-noturno.sh run",
+        "on-scroll-up": "$HOME/.config/waybar/ofx-noturno.sh log",
         "tooltip": true
     },
     "custom/power": {
